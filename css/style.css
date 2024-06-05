@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* スタートボタンのスタイル */
+.start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.start-screen button {
+    font-size: 30px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    color: rgb(2, 122, 174);
+    border-color: #215d87;
+    border-width: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.start-screen button:hover {
+    background-color: hwb(87 80% 0%);
+}
+
+#game_board {
+    width: 510px;
+    height: 620px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.haikei{
+    background-image: url('../img/newhaikei.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.page-title{
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    text-align: center;
+    font-size:16px;
+    line-height: 1.5;
+    color:#424242;    
+    font-family: 'Roboto', "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic,'Meiryo UI',Meiryo,"ＭＳ ゴシック",Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.card {
+    width: 100px;
+    height: 150px;
+    line-height: 80px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: gray 2px 2px;
+    background: white;
+    float: left;
+    cursor: pointer;
+
+}
+
+img{
+    width: 100px;
+    height: 150px
+}
+
+#countboard{
+  font-size: 25px;
+  font-weight: bold;
+  position: fixed;
+  top: 200px;
+  left: 160px;
+  color: #424242;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 裏の状態 */
+.back {
+    background-image: url('../img/nikukyu.jpeg');
+    background-size: 100px 120px;
+}
+
+/* 終了時 */
+.finish {
+    opacity: 0;
+    cursor: default;
+}
+
+/* 経過秒数 */
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+    padding-bottom: 2em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.reload-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.reload-screen button {
+    font-size: 30px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    color: rgb(244, 70, 70);
+    border-color: #257123;
+    border-width: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.reload-screen button:hover {
+    background-color: hwb(325 90% 0%);
+}
